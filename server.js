@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //db.sequelize.sync();
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Alakh application." });
+  res.send("Welcome to Alakh application.");
 });
 
 //require('./app/routes/auth.routes')(app);
